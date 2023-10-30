@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+     flex-direction: column;
+    overflow-x: hidden;
+    background: url('https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2487&q=80') no-repeat center/cover;
+}
+
+nav 
+{width: 100%;
+    display: flex;
+    padding: 20px 30px;
+    background: #E6B0B4;
+    justify-content: space-around;
+    /* justify-content: center; */
+    align-items: center;
+    color: #05097a;
+}
+
+nav a {
+    text-decoration: none;
+    color: #05097a
+}
+
+nav .logo {
+    padding: 10px;
+    border: 1px solid #fff;
+    font-size: 1.8em;
+}
+
+nav .logo:hover {
+    background-color: #fff;
+    color: #261c85;
+    transition: all .2s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    float: left;
+    /* gap: 1em; */
+    list-style: none;
+    /* align-items: center;
+    flex-grow: 1; */
+}
+
+nav ul li {
+    /* min-width: 100px; */
+    padding: 5px;
+}
+
+nav ul li a {
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+
+nav ul .inscription {
+    color:   white;
+    background-color:  #05097a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul .inscription:hover {
+    padding: 12px;
+    transition: all .2s ease-in-out;
+}
+
+section {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cadres{
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  /* border:  1px solid red; */
+}
+
+.cadre{
+  width: 280px;
+  height: auto;
+  /* border: 1px solid blue; */
+  margin-left: 15px;
+}
+
+.cadre h3{
+    text-align: center;
+}
+
