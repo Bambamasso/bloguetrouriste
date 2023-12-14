@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../connecter.php";
+require_once "./connecter.php";
 // echo $_SESSION['user_id'];
 if(!empty($_SESSION['user_id'])){
 $sessionUserId = $_SESSION['user_id'];
@@ -24,7 +24,7 @@ if($_GET['id']){
     $execute = mysqli_query($connexion,$rox);
     if($execute){
         echo "suppression actualisé";
-        header('LOCATION:index.php');
+        header('LOCATION:./page.accueil.php');
     }else{
         echo "erreur ";
     }

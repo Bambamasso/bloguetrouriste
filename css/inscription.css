@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 * {
     margin: 0;
@@ -79,7 +79,7 @@ nav ul input {
     outline: none;
     border: none;
     border-radius: 5px;
-}
+} */
 
   .inscription{
        display: flex;
@@ -128,11 +128,11 @@ nav ul input {
             padding: 10px;
             border-radius: 5px;
             margin: 0 auto;
-            background: #e6b0b4;
-            color: #05097a;
+            background: yellow;
+            color: purple;
             text-align: center;
         }
         .contenu form input[type='submit']:hover {
-            background-color: #3f2fce;
+            background-color: white;
             border: 1px solid #3f2fce;
         }

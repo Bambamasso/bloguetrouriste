@@ -1,5 +1,5 @@
 <?php
- $connexion=mysqli_connect('localhost','root', '','monblogue');
+ $connexion=mysqli_connect('localhost:3306','root', '','monblogue',);
  if(!$connexion){
   die('erreur de connexion');
  }

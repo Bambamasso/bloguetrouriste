@@ -1,5 +1,5 @@
 <?php
-require_once "../connecter.php";
+require_once "./connecter.php";
 // echo $_SESSION['user_id'];
 if(!empty($_SESSION['user_id'])){
 $sessionUserId = $_SESSION['user_id'];
@@ -16,6 +16,6 @@ $selection="SELECT * FROM users WHERE id='$sessionUserId' ";
     die("utilisateur inconnu");
  }
 }else{
-    header('LOCATION:../connexion.php');
+    header('LOCATION:./page.connexion.php');
 }
 ?>
