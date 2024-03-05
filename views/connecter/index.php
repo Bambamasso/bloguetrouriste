@@ -1,8 +1,11 @@
 
 <?php 
-$table='./css/style.css';
+ $table='./css/style.css';
 require('./views/include/nav.connecter.php');
 ?>
+
+   
+
        <div class="poste">
        
        <div id="content">
@@ -11,6 +14,7 @@ require('./views/include/nav.connecter.php');
     </p>
             <h1>Mes Articles</h1>
             <a href="page.ajouter.php" class="btn">Ajouter un article</a>
+            <?php if(!empty($userArticle)):?>
             <table>
                 <thead>
                     <tr>
@@ -23,7 +27,7 @@ require('./views/include/nav.connecter.php');
                     </tr>
                 </thead>
                 <tbody>
-                 <?php foreach ($userArticle as $value):?>
+                  <?php foreach ($userArticle as $value):?> 
                     <tr>
                         
                         <td><?php echo $value['titre']?></td>
@@ -36,6 +40,9 @@ require('./views/include/nav.connecter.php');
                  <?php endforeach;?>
                 </tbody>
             </table>
+            <?php else :?>
+               <p>Vous n'avez pas encore ajouter d'articles</p>
+            <?php endif;?>
         </div>
     </div>
 

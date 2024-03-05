@@ -30,12 +30,15 @@
       $description=$_POST['description'];
       $contenu=$_POST['contenu'];
 
-      $insertion ="INSERT INTO articles(titre,image,description,contenu,user_id)";
-      $insertion .= "VALUES('$titre', '$nouveau_nom_img', '$description', '$contenu', '$sessionUserId') " ;
-      
-       $requette=mysqli_query($connexion,$insertion);
+      $insertion ="INSERT INTO articles(titre,image,description,contenu,user_id) VALUES(?,?,?,?,?)";
+      // $insertion .= "VALUES('$titre', '$nouveau_nom_img', '$description', '$contenu', '$sessionUserId') " ;
+       $stm=mysqli_prepare($connexion, $insertion);
+       $query=mysqli_stmt_bind_param($stm,'ssssi',$titre,$nouveau_nom_img,$description, $contenu,$sessionUserId);
+       mysqli_stmt_execute($stm);
+
+      //  $requette=mysqli_query($connexion,$insertion);
  
-      if($requette){
+      if(mysqli_affected_rows($connexion)>0){
       $message="inserction valider";
       }
       else{echo"echec";}

@@ -1,0 +1,128 @@
+
+section{
+     width: 100%; 
+}
+
+
+ 
+.content .image {
+     display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+.content .image img{
+    /* border: 1px solid red; */
+    /* width:10%; */
+     height: 10%;
+}
+.content h1{
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    /* color: blue; */
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.content p{
+    /* position: absolute;  */
+    margin-left: 150px; 
+    text-align: center;
+   /* width: 70%;  */
+   margin-top: 20px;
+   margin-bottom: 50px;
+   width: 70%;
+
+}
+
+.boite{
+    width: 100%; 
+    /* position: static;  */
+    border: 1px solid;
+    /* margin-bottom: 500px;  */
+}
+ hr{
+    width: 200px;
+    text-align: center;
+} 
+
+ .boite .commentaire{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+ .boite p{
+    text-align: center;
+    font-size: 20px;
+ }
+ 
+.boite form{
+    width: 100%;
+    max-width: 500px;
+     display: flex; 
+     /* flex-direction: column;  */
+     /* gap: 1.5em; 
+     padding: 10px;  */
+}
+.boite form input{
+  width:100% ;
+ outline: none; 
+}
+
+.boite form input[type='submit']{
+    width: 100%;
+    max-width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    /* margin: 0 auto; */
+    background-color: #261c85;
+    color: #fff;
+    text-align: center;
+}
+
+.comt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    /* border: 1px solid red */
+}
+
+.champt{
+    /* border: 1px solid blue; */
+    /* background: #261c85; */
+    width: 100%;
+    
+    height: 25px;
+    background: #261c85;
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    text-align: center;
+    /* border: 3px solid purple; */
+    background: #fff;
+   
+
+
+}
+ table td{
+
+ /* border: 1px solid black; */
+  padding: 15px;
+  
+
+} 
+tr{
+    width: 100%;
+  
+}
+
+

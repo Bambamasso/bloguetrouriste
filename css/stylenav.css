@@ -1,0 +1,158 @@
+.container{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+.container .slider{
+    position: relative;
+    width: 500%;
+    animation: animate 15s linear infinite;
+}
+ .container .slide{
+    position: relative;
+    width: 20%;
+    float: left;
+    height: 80vh;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 6em;
+    width: 100%;
+    background: gray;
+    color: #fff;
+}
+.slide{
+    background-size: cover;
+    background-position: center;
+   background-repeat: no-repeat;
+
+}
+.slide:nth-child(1){
+    background: url(../image/Basilique1.jpg);
+}
+.slide:nth-child(2){
+    background: url(../image/téléchargement.jfif);
+}
+.slide:nth-child(3){
+    background: url(../image/2020-09-09-15-08-55-278fc6_92fe702de6584c1880289e71d1275897~mv2.jpg);
+}
+.slide:nth-child(4){
+    background: url(../image/monkey-3816926_960_720.jpg);
+}
+.slide:nth-child(5){
+    background: url(../image/Basilique1.jpg);
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    16%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    36%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    56%{
+        left: -200%;
+    }
+     60%{
+        left: -300%;
+     }
+     76%{
+        left: -300%;
+     }
+     80%{
+        left: -400%;
+     }
+     /* 96%{
+        left: -400%;
+     }
+     100%{
+        left: 0;
+     } */
+}
+
+section {
+    margin-top: 50px;
+    width: 100%;
+      display: flex; 
+      justify-content: center;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.section .colone{
+    width: 100%; 
+}
+
+ .colone .cadres{
+  width: 100%;
+  max-width: 1300px;
+  display: grid;
+  /* justify-content: center; */
+  justify-items: center;
+  /* align-items: center; */
+   display: flex; 
+  justify-content:center ;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+   gap: 20px; 
+   /* border:  1px solid red; */
+}
+
+.cadres .date{
+    font-size: 8px;
+}
+.cadres .nom{
+    font-size: 10px;
+    text-align: left;
+}
+
+.cadre{
+  width: 280px;
+  height: auto;
+  /* display: flex;
+  justify-content: center; */
+  /* border: 1px solid blue; */
+  background: #f5d5d8;
+ 
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  /* margin-left: 10px; */
+  margin-bottom: 20px;
+
+}
+.cadre img:hover{
+    transform: scale(0.95);
+    transition: 0.5s;
+    /* width: 250px;
+    text-align: center; */
+}
+
+.cadre h3{
+    text-align: center;
+}
+.cadre p{
+  
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    margin-bottom: 50px;
+}
